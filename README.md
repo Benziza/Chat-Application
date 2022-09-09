@@ -11,3 +11,13 @@ WebSocket works by first establishing a regular HTTP connection with the server 
 websocket connection by sending an <strong>Upgrade header</strong>.
 
 <img src="./imgs/img1.png">
+
+## Technologies used
+
+### Java 17
+
+### Spring Boot 2.7.3
+
+### websocket
+
+### Maven
