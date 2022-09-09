@@ -16,6 +16,7 @@ var colors = [
     '#ffc107', '#ff85af', '#FF9800', '#39bbb0'
 ];
 
+//The connect() function uses SockJS and stomp client to connect to the /ws endpoint that we configured in Spring Boot.
 function connect(event) {
     username = document.querySelector('#name').value.trim();
 
@@ -33,6 +34,7 @@ function connect(event) {
 
 function onConnected() {
     // Subscribe to the Public Topic
+    //The stompClient.subscribe() function takes a callback method which is called whenever a message arrives on the subscribed topic.
     stompClient.subscribe('/topic/public', onMessageReceived);
 
     // Tell your username to the server
